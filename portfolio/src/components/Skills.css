@@ -1,0 +1,57 @@
+.skills-section {
+  padding: 6rem 0;
+  background-color: #f8f9fa;
+}
+
+.competency-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.competency-card {
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 2rem;
+  text-align: center;
+  border: 1px solid #dee2e6;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-decoration: none;
+  color: inherit;
+}
+
+.competency-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.competency-icon {
+  font-size: 2.5rem;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.competency-name {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #343a40;
+}
+
+.skills-cloud {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 0.75rem; /* 12px */
+  margin-top: 3rem;
+}
+
+.skills-cloud img {
+  transition: transform 0.2s ease-in-out;
+}
+
+.skills-cloud img:hover {
+  transform: scale(1.1);
+}

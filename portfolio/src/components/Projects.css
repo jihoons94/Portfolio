@@ -1,0 +1,139 @@
+.experience-section {
+  padding: 6rem 0;
+  background-color: #ffffff;
+}
+
+.experience-list {
+  margin-top: 3rem;
+}
+
+/* Company Styles */
+.company-header {
+  margin-bottom: 2.5rem;
+}
+
+.company-header h3 {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 2rem;
+  color: #212529;
+  margin-bottom: 0.5rem;
+}
+
+.current-badge {
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: #fff;
+  background-color: #007bff;
+  padding: 0.3rem 0.7rem;
+  border-radius: 50px;
+}
+
+.company-header p {
+  font-size: 1.1rem;
+  color: #6c757d;
+}
+
+.company-header h3 a {
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.company-header h3 a:hover {
+  color: #007bff;
+}
+
+/* Project Styles */
+.project-list {
+  border-left: 3px solid #dee2e6;
+  padding-left: 2rem;
+}
+
+.project-item {
+  position: relative;
+  margin-bottom: 3rem;
+}
+.project-item:last-child {
+  margin-bottom: 0;
+}
+
+.project-item::before {
+  content: '';
+  position: absolute;
+  left: -2rem;
+  top: 8px;
+  width: 14px;
+  height: 14px;
+  background-color: #007bff;
+  border-radius: 50%;
+  transform: translateX(-6.5px);
+}
+
+.project-item h4 {
+  font-size: 1.5rem;
+  margin-bottom: 1.25rem;
+}
+
+.project-details {
+  display: flex;
+  gap: 2rem;
+}
+
+.project-info {
+  flex: 0 0 220px;
+  color: #495057;
+}
+
+.project-info h5 {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #212529;
+  margin-bottom: 0.25rem;
+}
+
+.project-info .project-team {
+  margin-bottom: 0.5rem;
+}
+
+.project-tasks {
+  flex: 1;
+  list-style-position: outside;
+  padding-left: 1.25rem;
+  color: #495057;
+}
+
+.project-tasks li {
+  margin-bottom: 0.75rem;
+  line-height: 1.7;
+}
+
+.task-details {
+  list-style-type: '○ ';
+  padding-left: 1.5rem;
+  margin-top: 0.5rem;
+  color: #6c757d;
+}
+
+.task-details li {
+  margin-bottom: 0.5rem;
+  line-height: 1.6;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .project-details {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  .project-info {
+    flex-basis: auto;
+  }
+  .project-list {
+    padding-left: 1.5rem;
+  }
+  .project-item::before {
+    left: -1.5rem;
+  }
+}

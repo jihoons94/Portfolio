@@ -58,3 +58,5 @@ const TechDetailPage: React.FC = () => {
 
 export default TechDetailPage;
 
+
+

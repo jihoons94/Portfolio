@@ -32,8 +32,8 @@ const workExperience: WorkExperienceData = {
     {
       name: 'Magic Masters',
       client: 'Morph Internal Project',
-      role: 'Project Lead',
-      team: '팀장, 2인',
+      role: 'Lead Developer',
+      team: '2인 개발',
       period: '2025.08 - 2025.12',
       tasks: [
         { content: '사내 신규 프로젝트 기획 및 프로토타입 개발 총괄' },
@@ -42,8 +42,8 @@ const workExperience: WorkExperienceData = {
     {
       name: 'GALAXY Z FLIP7 & Z FOLD7 / 한국 UNPACKED 체험 웹사이트',
       client: 'SAMSUNG',
-      role: 'Project Lead / Data Analyst',
-      team: '팀장, 2인',
+      role: 'Lead Developer',
+      team: '2인 개발',
       period: '2025.04 - 2025.07',
       tasks: [
         { content: 'Google Analytics 이벤트 설계, 사용자 데이터 수집 및 분석 총괄' },
@@ -53,8 +53,8 @@ const workExperience: WorkExperienceData = {
     {
       name: 'GALAXY S25 시리즈 / GLOBAL UNPACKED 체험 웹사이트',
       client: 'SAMSUNG',
-      role: 'Project Lead / Full Stack Developer',
-      team: '팀장, 3인',
+      role: 'Lead Developer',
+      team: '3인 개발',
       period: '2024.07 - 2025.03',
       tasks: [
         { content: 'Node.js, Express 기반 Backend 서버 개발 및 API 설계' },
@@ -67,8 +67,8 @@ const workExperience: WorkExperienceData = {
     {
       name: 'ifland (Metaverse App)',
       client: 'SKT',
-      role: 'Unity Developer',
-      team: 'Prop Part 팀장, 5인 이상',
+      role: 'Prop Team Lead Developer',
+      team: '5인 이상 개발',
       period: '2022.02 - 2024.02',
       tasks: [
         {
@@ -93,8 +93,8 @@ const workExperience: WorkExperienceData = {
     {
       name: '천재교육 – 한글',
       client: '천재교육',
-      role: 'Web Content Developer',
-      team: '팀장, 3인',
+      role: 'Lead Developer',
+      team: '3인 개발',
       period: '2021.02 - 2021.08',
       tasks: [
         { content: 'Animate CC와 JavaScript(JSFL)를 활용하여 유아용 한글 교육 인터랙티브 콘텐츠 개발' },
@@ -105,33 +105,33 @@ const workExperience: WorkExperienceData = {
     {
       name: 'Jump AR 2.0',
       client: 'SKT',
-      role: 'AR/Unity Developer',
-      team: 'Unity Part 팀장, 5인 이상',
+      role: 'Unity Part Lead Developer',
+      team: '5인 이상 개발',
       period: '2020.02 - 2021.01',
       tasks: [
         { content: '기존 Jump AR 1.0 콘텐츠를 2.0 앱 환경에 맞게 이관 및 최적화' },
-        { content: 'IK(Inverse Kinematics)를 활용한 미니동물 콘텐츠 신규 개발 및 자연스러운 모션 구현' },
+        { content: '<a href="https://docs.unity3d.com/6000.3/Documentation/Manual/InverseKinematics.html" target="_blank" rel="noopener noreferrer">IK(Inverse Kinematics)</a>를 활용한 미니동물 콘텐츠 신규 개발 및 자연스러운 모션 구현' },
         { content: '미니동물 코스튬 관리를 위한 별도의 확인/보고용 앱 및 Unity Editor 기능 개발' },
         { content: 'Asset Bundle 기반의 콘텐츠 업데이트 시스템 고도화 및 구조 개선' },
       ],
     },
     {
-      name: 'Jump AR CES',
+      name: 'CES - Jump AR 아쿠아월드',
       client: 'SKT',
-      role: 'AR/Unity Developer',
-      team: '팀장, 2인 개발',
+      role: 'Lead Developer',
+      team: '2인 개발',
       period: '2019.11 - 2019.12',
       tasks: [
-        { content: 'CES 전시용 해양 정화 컨셉의 AR 멀티플레이 슈팅 게임 개발 총괄' },
-        { content: 'Cloud Anchor를 활용한 AR 증강 환경 및 Unity/C# 기반 게임 콘텐츠 개발 (슈팅, 쉐이더, 동적 Path, 보스 스테이지)' },
-        { content: 'Photon Engine을 활용한 실시간 멀티플레이 환경 구축 및 동기화 (슈팅, NPC 움직임/애니메이션)' },
+        { content: '<a href="https://news.sktelecom.com/120019" target="_blank" rel="noopener noreferrer">CES</a> 전시용 해양 정화 컨셉의 AR 멀티플레이 슈팅 게임 개발 총괄' },
+        { content: '<a href="https://developers.google.com/ar/develop/cloud-anchors?hl=ko" target="_blank" rel="noopener noreferrer">Cloud Anchor</a>를 활용한 AR 증강 환경 및 Unity/C# 기반 게임 콘텐츠 개발 (슈팅, 쉐이더, 동적 Path, 보스 스테이지)' },
+        { content: '<a href="https://www.photonengine.com/" target="_blank" rel="noopener noreferrer">Photon Engine</a>을 활용한 실시간 멀티플레이 환경 구축 및 동기화 (슈팅, NPC 움직임/애니메이션)' },
       ],
     },
     {
       name: '5GX Massive AR – 서울 숲 (JUMP AR 1.0)',
       client: 'SKT',
       role: 'AR/Unity Developer',
-      team: '팀원, 5인 이상',
+      team: '5인 이상 개발',
       period: '2019.06 - 2020.01',
       tasks: [
         { content: 'Unity, ARCore, ARKit을 사용하여 서울 숲 컨셉의 거대/미니 동물 AR 증강 콘텐츠 개발' },
@@ -149,8 +149,8 @@ const workExperience: WorkExperienceData = {
       tasks: [
         { content: 'Unity와 C#을 사용한 야구 컨셉의 AR 카드 멀티플레이/싱글 게임 개발 총괄' },
         { content: 'Unity Timeline을 활용한 카드 제출 연출 및 게임 로비/인게임 UI 구현' },
-        { content: 'Google ARCore의 Cloud Anchor를 활용하여 3D 콘텐츠 AR 증강 환경 개발' },
-        { content: 'Photon Engine 기반 실시간 멀티플레이 환경 구축 (로비, 자동 매칭, 위치/애니메이션 동기화)' },
+        { content: 'Google ARCore의 <a href="https://developers.google.com/ar/develop/cloud-anchors?hl=ko" target="_blank" rel="noopener noreferrer">Cloud Anchor</a>를 활용하여 3D 콘텐츠 AR 증강 환경 개발' },
+        { content: '<a href="https://www.photonengine.com/" target="_blank" rel="noopener noreferrer">Photon Engine</a> 기반 실시간 멀티플레이 환경 구축 (로비, 자동 매칭, 위치/애니메이션 동기화)' },
       ],
     },
   ],
@@ -178,18 +178,18 @@ const Projects: React.FC = () => {
                   <h4>{project.name}</h4>
                   <div className="project-details">
                     <div className="project-info">
-                      <h5>{project.role}</h5>
-                      <span>{project.period}</span>
+                      <p className="project-role">{project.role}</p>
                       <p className="project-team">{project.team}</p>
+                      <span>{project.period}</span>
                     </div>
                     <ul className="project-tasks">
                       {project.tasks.map((task, i) => (
                         <li key={i}>
-                          {task.content}
+                          <span dangerouslySetInnerHTML={{ __html: task.content }} />
                           {task.details && (
                             <ul className="task-details">
                               {task.details.map((detail, j) => (
-                                <li key={j}>{detail}</li>
+                                <li key={j} dangerouslySetInnerHTML={{ __html: detail }} />
                               ))}
                             </ul>
                           )}

@@ -4,7 +4,7 @@ import { HashLink } from 'react-router-hash-link';
 import { workExperience } from '../data/workExperience';
 
 const FeaturedProjects: React.FC = () => {
-  const featured = workExperience.projects.slice(0, 8); // Show first 4 projects
+  const featured = workExperience.projects.slice(0, 9); // Show first 4 projects
 
   return (
     <section id="featured-projects" className="featured-projects-section">

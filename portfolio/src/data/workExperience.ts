@@ -140,9 +140,26 @@ export const workExperience: WorkExperienceData = {
       period: '2020.02 - 2021.01',
       tasks: [
         { content: '기존 Jump AR 1.0 콘텐츠를 2.0 앱 환경에 맞게 이관 및 최적화' },
-        { content: '<a href="https://docs.unity3d.com/6000.3/Documentation/Manual/InverseKinematics.html" target="_blank" rel="noopener noreferrer">IK(Inverse Kinematics)</a>를 활용한 미니동물 콘텐츠 신규 개발 및 자연스러운 모션 구현' },
-        { content: '미니동물 코스튬 관리를 위한 별도의 확인/보고용 앱 및 Unity Editor 기능 개발' },
-        { content: 'Asset Bundle 기반의 콘텐츠 업데이트 시스템 고도화 및 구조 개선' },
+        { content: 'IK(Inverse Kinematics)를 활용한 미니동물 콘텐츠 신규 개발 및 자연스러운 모션 구현' },
+        { content: '미니동물의 다양한 코스튬 지원',
+          details: [
+            '코스튬 관리를 위한 별도의 확인/보고용 앱 개발',
+            '코스튬 장착 시 미니동물 털 Shader의 의상 관통 문제로 코스튬 메쉬와 겹치는 동물 신체 폴리곤을 제거하는 기능 개발',
+          ],
+        },
+        { content: 'Asset Bundle 기반의 콘텐츠 업데이트 시스템 고도화 및 구조 개선',
+          details: [
+            '트리 구조 형태로 공통 리소스 정리 및 관리를 통해 메모리 및 용량 최적화',
+            'App Update 없이 오브젝트 증강 콘텐츠 업데이트가 가능하도록 관련 구조 개선',
+          ],
+         },
+         { content: "확장성과 유지보수성을 높이기 위해 경량 Message Dispatcher 아키텍처를 설계 및 구현",
+          details: [
+            'Pub/Sub 패턴을 기반으로 구현하여, 각 기능 모듈이 서로 직접적인 참조 없이 메시지를 통해 통신하도록 구조를 개선',
+            '코드의 결합도가 낮아져 신규 기능 추가 및 변경 시 발생하는 사이드 이펙트를 최소화',
+            '신규 인원도 전체 구조를 파악할 필요 없이 쉽게 AR 컨텐츠를 개발 가능하게 제공'
+          ],
+         }
       ],
       techStack: ['Unity', 'C#'],
       thumbnail: jumpAR2Thumb,
@@ -168,10 +185,25 @@ export const workExperience: WorkExperienceData = {
       team: '5인 이상 개발',
       period: '2019.06 - 2020.01',
       tasks: [
-        { content: 'Unity, ARCore, ARKit을 사용하여 서울 숲 컨셉의 거대/미니 동물 AR 증강 콘텐츠 개발' },
-        { content: '사용자 응원 메시지 조회를 위한 API 연동 및 AR 포탈 이동 기능 구현' },
+        { content: 'Unity, ARCore, ARKit을 사용하여 서울 숲 컨셉의 거대/미니 동물 AR 증강 콘텐츠 개발',
+          details: [
+            '동영상 형태의 거대 동물 콘텐츠 증강 개발',
+            '3D 모델 형태의 미니 동물 콘텐츠 증강 개발',
+          ]
+        },
+        { content: '<a href="https://inthenews.co.kr/news/article.html?no=17537" target="_blank" rel="noopener noreferrer">LCK AR 응원 컨텐츠</a> 제작',
+          details: [
+            '사용자 응원 메시지 조회를 위한 API 연동',
+            'AR 포탈 이동 기능 구현',
+          ]
+        },
         { content: 'Face Tracking을 활용한 AR 페이스 필터(모자, 타투) 콘텐츠 개발' },
-        { content: 'Asset Bundle 기반의 콘텐츠 업데이트 시스템 설계 및 구현 (리소스 관리 및 비개발자용 업데이트 환경 제공)' },
+        { content: 'Asset Bundle 기반의 콘텐츠 업데이트 시스템 설계 및 구현',
+          details: [
+            '리소스 관리 및 비개발자용 업데이트 환경 제공',
+            'App Theme를 AssetBundle로 관리 및 업데이트 가능하도록 구조 개선'
+          ],
+        },
       ],
       techStack: ['Unity', 'C#', 'ARCore', 'ARKit'],
       thumbnail: seoulForestThumb,

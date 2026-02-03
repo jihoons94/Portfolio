@@ -55,14 +55,98 @@
   margin-bottom: 1.5rem;
 }
 
+.content-subtitle {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #495057;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #dee2e6;
+}
+
+.content-subtitle:first-child {
+  margin-top: 0;
+}
+
 .content-block p {
-  font-size: 1.1rem;
-  line-height: 1.8;
+  font-size: 0.95rem;
+  line-height: 1.7;
   color: #343a40;
 }
 
 .content-block p + p {
     margin-top: 1rem;
+}
+
+.content-media {
+  margin: 1.5rem 0;
+}
+
+.content-media img,
+.content-media video {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.content-image-group {
+  display: flex;
+  gap: 1rem;
+  margin: 1.5rem 0;
+  flex-wrap: wrap;
+}
+
+.content-media-group-item {
+  flex: 1;
+  min-width: 0;
+}
+
+.content-media-group-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* GIF 이미지 지원 */
+.content-media img[src$=".gif"] {
+  display: block;
+}
+
+.media-caption {
+  margin-top: 0.75rem;
+  font-size: 0.95rem;
+  color: #6c757d;
+  font-style: italic;
+  text-align: center;
+}
+
+.content-code {
+  margin: 1.5rem 0;
+}
+
+.code-caption {
+  margin-bottom: 0.75rem;
+  font-size: 0.95rem;
+  color: #6c757d;
+  font-style: italic;
+}
+
+.content-code pre {
+  background-color: #282c34;
+  color: #abb2bf;
+  padding: 1.5rem;
+  border-radius: 8px;
+  overflow-x: auto;
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+.content-code code {
+  font-family: 'Courier New', Courier, monospace;
 }
 
 .related-projects-section h3 {

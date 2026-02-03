@@ -38,15 +38,18 @@ export const workExperience: WorkExperienceData = {
   isCurrent: true,
   projects: [
     {
-      name: 'Magic Masters',
+      name: 'TCG - Magic Masters',
       client: 'Morph Internal Project',
       role: 'Lead Developer',
       team: '2인 개발',
       period: '2025.08 - 2025.12',
       tasks: [
         { content: '사내 신규 프로젝트 기획 및 프로토타입 개발 총괄' },
+        { content: '메세지 버스 패턴을 활용한 컴포넌트 간 통신 구조 설계 및 구현' },
+        { content: '메세지 버스를 활용한 게임 리플레이 기능 개발' },
+        { content: '카드 게임 기능 개발' },
       ],
-      techStack: ['Unity', 'C#'],
+      techStack: ['Unity', 'C#', "Message Bus Dispatcher"],
       thumbnail: 'magicMastersThumb',
     },
     {
@@ -57,9 +60,11 @@ export const workExperience: WorkExperienceData = {
       period: '2025.04 - 2025.07',
       tasks: [
         { content: 'Google Analytics 이벤트 설계, 사용자 데이터 수집 및 분석 총괄' },
-        { content: '사용자 유입 경로 및 행동 패턴 분석을 통한 웹사이트 개선 전략 도출 및 리포팅' },
+        { content: 'BigQuery를 활용한 수집 된 정보 분석 및 리포팅'},
+        { content: 'Looker Studio를 활용한 대시보드 구축 및 관리'},
+        { content: '사용자 유입 경로 및 행동 패턴을 엑셀 형태로 리포팅' },
       ],
-      techStack: ['Google Analytics'],
+      techStack: ['Google Analytics', 'BigQuery', 'Looker Studio'],
       thumbnail: galaxyZFlip7ZFold7Thumb,
     },
     {
@@ -69,13 +74,29 @@ export const workExperience: WorkExperienceData = {
       team: '3인 개발',
       period: '2024.07 - 2025.03',
       tasks: [
-        { content: 'Node.js, Express 기반 Backend 서버 개발 및 API 설계' },
-        { content: 'MySQL, Redis를 활용한 DB 설계 및 구축' },
-        { content: '대규모 동시 접속 환경을 고려한 예약 시스템의 경쟁 문제(Race Condition) 해결' },
+        { content: 'NestJS를 활용한 Backend 서버 개발',
+          details: [
+            'API 설계 및 구축',
+            'MySQL를 활용한 DB 설계 및 구축',
+            '예약 시스템의 경쟁 문제(Race Condition) 해결',
+            '대규모 동시 접속 환경을 고려한 예약 시스템 개발',
+            '경품 추첨 및 등록/관리 시스템 개발',
+            'Admin 관리자 페이지 개발',
+          ]
+        },
+        { content: 'AWS를 통한 서버 및 프론트엔드 배포 관리',
+          details: [
+            'AWS S3를 활용한 정적 파일 배포',
+            'AWS CloudFront를 활용한 콘텐츠 전송 최적화',
+            'AWS Route 53를 활용한 도메인 관리',
+            'AWS DB를 활성화 및 연결',
+            'GitHub Actions를 통한 CI/CD 파이프라인 구축',
+          ]
+        },
         { content: 'React, TypeScript 기반 Frontend 웹사이트 개발' },
         { content: 'Google Analytics를 활용한 사용자 행동 데이터 분석 및 리포팅' },
       ],
-      techStack: ['React', 'TypeScript', 'Node.js', 'Express', 'MySQL', 'Redis', 'Google Analytics'],
+      techStack: ['React', 'TypeScript', 'Node.js', 'NextJS', 'MySQL', 'Google Analytics', 'AWS'],
       thumbnail: galaxyS25Thumb,
     },
     {
@@ -94,8 +115,8 @@ export const workExperience: WorkExperienceData = {
         {
           content: 'Runtime Script Engine 개발 및 유지보수',
           details: [
-            'PuerTS를 활용한 Unity Runtime Script Engine 개발',
-            'Language Service 및 TypeScript Compile API를 활용한 전용 Compiler 개발',
+            '<a href="https://puerts.github.io/en/docs/puerts/unity/install" target="_blank" rel="noopener noreferrer">PuerTS</a>를 활용한 <a href="/#/tech/script-engine">Unity Runtime Script Engine</a> 개발',
+            '<a href="https://github.com/microsoft/typescript/wiki/using-the-language-service-api" target="_blank" rel="noopener noreferrer">Language Service API</a> 및 <a href="https://github.com/microsoft/typescript/wiki/using-the-language-service-api" target="_blank" rel="noopener noreferrer">TS Compiler API</a>를 활용한 전용 Compiler 개발',
             'Unity MonoBehaviour와 유사한 Lifecycle 구현을 TypeScript로 제공하기 위한 전용 IFSBehavior 개발',
             'TS 파일 전용 Import Asset 및 Component 에디터 기능 개발'
           ],
@@ -110,12 +131,23 @@ export const workExperience: WorkExperienceData = {
         },
         {
           content: 'Prop 개발',
+          details: [
+            '기획 과정에서 선정된 다양한 메타버스 속 Prop 개발 참여',
+            '노래방, 탈것, 미니오락기 등',
+          ],
+        },
+        {
+          content: 'NPC AI 개발',
+          details: [
+            '메타버스 환경에 적합한 AI Framework 개발',
+            '게임 심즈와 유사한 Utility AI 기반의 행동 선택 로직 개발',
+          ]
         },
         {
           content: 'Sprint 별 업무 계획 수립 및 이슈 관리',
         },
       ],
-      techStack: ['Unity', 'C#', 'TypeScript', 'PuerTS'],
+      techStack: ['Unity', 'C#', 'TypeScript', 'JavaScript', 'Runtime Script Engine', 'PuerTS', 'Language Service API', 'TS Compiler API'],
       thumbnail: iflandThumb,
     },
     {
@@ -129,7 +161,7 @@ export const workExperience: WorkExperienceData = {
         { content: '콘텐츠 양산을 위한 템플릿 및 공통 모듈 개발 주도' },
         { content: 'Unity 물리 엔진으로 생성한 움직임을 키프레임으로 변환하여 Animate에 적용하는 에디터 기능 개발' },
       ],
-      techStack: ['Unity', 'C#', 'Animate CC', 'JavaScript(JSFL)'],
+      techStack: ['Unity', 'C#', 'Animate CC', 'JavaScript', 'JSFL'],
       thumbnail: hangeulThumb,
     },
     {

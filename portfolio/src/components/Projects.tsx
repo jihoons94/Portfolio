@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './Projects.css';
 import { workExperience } from '../data/workExperience';
 
@@ -23,9 +24,17 @@ const Projects: React.FC = () => {
                 <div key={index} id={`project-${index}`} className="project-item">
                   <h4>{project.name}</h4>
                   <div className="project-tech-stack">
-                    {project.techStack.map(tech => (
-                      <span key={tech} className="tech-tag">{tech}</span>
-                    ))}
+                    {project.techStack.map(tech => {
+                      // Runtime Script Engine에 링크 추가
+                      if (tech === 'Runtime Script Engine') {
+                        return (
+                          <Link key={tech} to="/tech/script-engine" className="tech-tag tech-tag-link">
+                            {tech}
+                          </Link>
+                        );
+                      }
+                      return <span key={tech} className="tech-tag">{tech}</span>;
+                    })}
                   </div>
                   <div className="project-details">
                     <div className="project-info">

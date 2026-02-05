@@ -71,6 +71,26 @@ export const unity: TechDetail = {
         { type: 'image', src: '/unity/Animation_IK.jpg', alt: '애니메이션 IK', caption: '캐릭터 애니메이션 및 IK 구현' },
       ],
     },
+    {
+      title: 'Timeline을 활용한 연출 반영',
+      items: [
+        'Unity Timeline을 활용하여 게임 내 연출과 시네마틱을 시간 기반으로 제어하는 시스템을 구현했습니다.',
+        'Timeline을 통해 애니메이션, 오디오, 이펙트, 카메라 움직임 등 다양한 요소를 하나의 타임라인에서 동기화하여 정확한 타이밍의 연출을 구현했습니다.',
+        '게임 플레이 중 특정 이벤트나 상호작용에 따라 Timeline을 재생하여 일관된 연출 경험을 제공했습니다.',
+        { type: 'image', src: '/unity/Timeline.jpg', alt: 'Unity Timeline', caption: 'Unity Timeline을 활용한 연출 구현' },
+
+        { type: 'subtitle', text: '다양한 트랙 활용' },
+        'Animation Track, Activation Track, Audio Track, Signal Track 등 다양한 트랙을 활용하여 복잡한 연출을 구현했습니다.',
+        'Signal Track을 통해 Timeline 재생 중 특정 시점에 게임 로직을 트리거하여 연출과 게임플레이를 자연스럽게 연결했습니다.',
+        '카드 게임의 카드 제출 연출, 보스전 연출, 이벤트 시퀀스 등 다양한 상황에서 Timeline을 활용하여 시각적으로 풍부한 경험을 제공했습니다.',
+
+        { type: 'subtitle', text: '재사용 가능한 Timeline 에셋 설계' },
+        '공통 연출 패턴을 Timeline 에셋으로 만들어 재사용 가능하도록 설계했습니다.',
+        'Timeline 에셋을 프리팹이나 씬에 연결하여 필요할 때 재생할 수 있도록 구조를 설계했습니다.',
+        '비개발자도 Timeline 에디터를 통해 연출을 수정하고 조정할 수 있도록 워크플로우를 구축했습니다.',
+        { type: 'image', src: '/unity/Timeline_Workflow.jpg', alt: 'Timeline 워크플로우', caption: 'Timeline을 활용한 연출 워크플로우' },
+      ],
+    },
   ],
   relatedProjects: ['ifland (Metaverse App)', 'Jump AR 2.0', 'Jump AR CES', '5GX Massive AR – 서울 숲 (JUMP AR 1.0)', '5GX AR (SKT 이벤트용 AR 게임)'],
 };
